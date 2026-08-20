@@ -1,0 +1,4 @@
+Project nest_server_infrastructure {
+  database_type: 'PostgreSQL'
+  Note: 'Add application tables and Ref declarations here as Sequelize models are introduced.'
+}

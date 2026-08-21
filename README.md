@@ -1,6 +1,8 @@
 # Spec-Development-Component
-Components to reference in the spec file for the agent not to do things that are deterministic
+
+Reusable components and project skeletons for specification-driven development.
 
 ## Available Components
 
-- [Nest server infrastructure skeleton](nest-server-infastructure/): a reusable NestJS starting point for server-side development.
+- [Nest server skeleton](nest-server-skeleton/): a reusable NestJS starting point for server-side development.
+- [React client skeleton](react-client-skeleton/): a reusable React, TypeScript, and Vite starting point for client-side development.

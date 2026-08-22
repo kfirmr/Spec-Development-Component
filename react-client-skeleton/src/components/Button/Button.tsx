@@ -6,8 +6,8 @@ import {
 import { Lottie } from "lottie-react";
 import { useStyles } from "./Button.style";
 import { Button as MuiButton } from "@mui/material";
-import { type CSSProperties, type FC, type MouseEvent } from "react";
 import loadingAnimation from "../../lottie/Smartbase-Loading.json";
+import { type CSSProperties, type FC, type MouseEvent } from "react";
 
 interface IButtonProps {
   text: string;

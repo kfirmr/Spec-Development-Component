@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Box, Typography } from "@mui/material";
-
 import Button from "../components/Button/Button";
 import Toggle from "../components/Toggle/Toggle";
 import CheckBox from "../components/CheckBox/CheckBox";
@@ -96,15 +95,15 @@ const ComponentsShowcase = () => {
         <Autocomplete
           value={city}
           onChange={setCity}
-          options={AUTOCOMPLETE_OPTIONS}
           placeholder="חיפוש עיר"
+          options={AUTOCOMPLETE_OPTIONS}
         />
         <Autocomplete
+          placeholder="בחר עיר"
           isAutocomplete={false}
           value={selectedOption}
           onChange={setSelectedOption}
           options={AUTOCOMPLETE_OPTIONS}
-          placeholder="בחר עיר"
         />
         <Typography>נבחר: {city ?? selectedOption ?? "—"}</Typography>
       </Section>
@@ -117,9 +116,9 @@ const ComponentsShowcase = () => {
 
       <Section title="CheckBox">
         <CheckBox
-          text="אני מאשר את התנאים"
           value={isChecked}
           onChange={setIsChecked}
+          text="אני מאשר את התנאים"
         />
         <Typography>מאושר: {isChecked ? "כן" : "לא"}</Typography>
       </Section>
@@ -169,11 +168,11 @@ const ComponentsShowcase = () => {
         <Button text="פתיחת פופאפ" onClick={() => setIsPopupOpen(true)} />
         <GenericPopup
           icon="WARNING"
+          align="center"
           open={isPopupOpen}
           title="אישור פעולה"
-          align="center"
-          guidelines="לא ניתן לבטל את הפעולה לאחר האישור"
           onClose={() => setIsPopupOpen(false)}
+          guidelines="לא ניתן לבטל את הפעולה לאחר האישור"
           content={<Typography>האם להמשיך בפעולה?</Typography>}
           buttons={{
             primary: { text: "אישור", onClick: handleAsyncConfirm },

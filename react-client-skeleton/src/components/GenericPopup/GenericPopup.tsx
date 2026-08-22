@@ -11,11 +11,11 @@ import {
 
 import Button from "../Button/Button";
 import { Close } from "@mui/icons-material";
-import type { TPopUpIcons } from "./constants/icons.constants";
 import { useStyles } from "./GenericPopup.style";
-import { type FC, type MouseEvent, type ReactNode, useState } from "react";
 import UltraSignature from "../UltraSignature/UltraSignature";
+import type { TPopUpIcons } from "./constants/icons.constants";
 import { renderPopupIcon } from "./utilities/renderIcon.utility";
+import { type FC, type MouseEvent, type ReactNode, useState } from "react";
 
 export type TAlignContent = "left" | "center" | "right";
 
@@ -28,10 +28,10 @@ export interface IPopupButton {
 export interface IGenericPopupProps {
   open: boolean;
   title: string;
-  onClose?: () => void;
   guidelines?: string;
   signature?: boolean;
   content?: ReactNode;
+  onClose?: () => void;
   align?: TAlignContent;
   icon?: TPopUpIcons | ReactNode;
   buttons: {
@@ -85,11 +85,11 @@ const GenericPopup: FC<IGenericPopupProps> = ({
 
   return (
     <Dialog
-      open={open}
-      onClose={onClose}
-      sx={styles.root}
       fullWidth
+      open={open}
       maxWidth="sm"
+      sx={styles.root}
+      onClose={onClose}
     >
       <Box sx={styles.headerContainer}>
         <DialogTitle sx={styles.title}>{title ?? ""}</DialogTitle>

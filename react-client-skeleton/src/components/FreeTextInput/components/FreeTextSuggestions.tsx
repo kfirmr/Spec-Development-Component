@@ -1,5 +1,5 @@
-import { type MouseEvent } from "react";
 import { Box } from "@mui/material";
+import { type MouseEvent } from "react";
 import { useStyles } from "./FreeTextSuggestions.style";
 import { getFreeTextSuggestionClassName } from "../../../utilities/free-text.utility";
 

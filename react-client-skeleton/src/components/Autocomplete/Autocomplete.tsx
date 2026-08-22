@@ -2,8 +2,8 @@ import {
   Box,
   Backdrop,
   TextField as TextFieldMui,
-  type AutocompleteRenderInputParams,
   Autocomplete as AutocompleteMui,
+  type AutocompleteRenderInputParams,
 } from "@mui/material";
 
 import Close from "../../icons/Close";

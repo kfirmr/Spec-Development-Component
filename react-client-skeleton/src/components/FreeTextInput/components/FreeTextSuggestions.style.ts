@@ -1,8 +1,9 @@
-import { createStyles } from "../../../create-styles";
 import {
   FREE_TEXT_COLORS,
   FREE_TEXT_SUGGESTION_CLASS_NAMES,
 } from "../../../constants/free-text.constants";
+
+import { createStyles } from "../../../create-styles";
 
 export const useStyles = () =>
   createStyles({

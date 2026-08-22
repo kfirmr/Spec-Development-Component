@@ -9,9 +9,9 @@ export interface IHelperText {
 }
 
 interface IHelperTextParams {
+  infoText?: string;
   errorText?: string;
   warningText?: string;
-  infoText?: string;
 }
 
 export const getHelperText = ({

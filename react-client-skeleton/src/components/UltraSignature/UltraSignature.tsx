@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
 import { Button } from "@mui/material";
+import React, { Suspense } from "react";
 import SignatureIcon from "./SignatureIcon";
 import useStyles from "./UltraSignature.style";
 import type SignatureCanvas from "react-signature-canvas";

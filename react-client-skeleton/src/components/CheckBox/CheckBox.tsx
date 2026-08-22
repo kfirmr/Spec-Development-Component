@@ -1,6 +1,6 @@
 import Check from "../../icons/Check";
-import { theme } from "../../constants/theme.constants";
 import { useStyles } from "./CheckBox.style";
+import { theme } from "../../constants/theme.constants";
 import { type FC, useEffect, type JSX, useState } from "react";
 
 interface ICheckBoxProps {
@@ -38,8 +38,8 @@ const CheckBox: FC<ICheckBoxProps> = ({
 
   return (
     <div
-      style={styles.container({ disabled, textColor })}
       onClick={handleChange}
+      style={styles.container({ disabled, textColor })}
     >
       <div style={styles.checkBox}>{checked && <Check />}</div>
       {text}

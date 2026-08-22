@@ -2,14 +2,15 @@ import {
   isDateDisabled,
   isDatepickerValueEqual,
 } from "./utilities/day.utility";
+
 import { he } from "date-fns/locale";
 import { createTheme } from "@mui/material";
 import { useEffect, useState } from "react";
 import { useStyles } from "./DatePicker.style";
 import { ThemeProvider } from "@mui/material/styles";
 import DayBubble from "./components/DayBubble/DayBubble";
-import type { IDateRange } from "./interfaces/date-range.interface";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import type { IDateRange } from "./interfaces/date-range.interface";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { DateCalendar, LocalizationProvider } from "@mui/x-date-pickers";
 
@@ -90,8 +91,8 @@ const DatePicker = <IsRange extends boolean>({
       <ThemeProvider theme={calendarTheme}>
         <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={he}>
           <DateCalendar
-            sx={styles.root}
             views={["day"]}
+            sx={styles.root}
             maxDate={maxDate}
             minDate={minDate}
             fixedWeekNumber={6}

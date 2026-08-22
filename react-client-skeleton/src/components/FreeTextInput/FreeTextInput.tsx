@@ -1,6 +1,6 @@
 import {
-  type FC,
   useRef,
+  type FC,
   useMemo,
   useState,
   useEffect,
@@ -20,16 +20,16 @@ import {
 
 import {
   FREE_TEXT_KEYS,
-  type TFreeTextSuggestionNavigationKeyType,
   FREE_TEXT_SUGGESTION_NAVIGATION_DELTAS,
+  type TFreeTextSuggestionNavigationKeyType,
 } from "../../constants/free-text.constants";
 
 import { Box, Typography } from "@mui/material";
 import { useStyles } from "./FreeTextInput.style";
 import FreeTextChip from "./components/FreeTextChip";
 import FreeTextSuggestions from "./components/FreeTextSuggestions";
-import type { IFreeTextInputProps } from "../../interfaces/free-text.interface";
 import { useDebouncedFreeText } from "./hooks/use-debounced-free-text.hook";
+import type { IFreeTextInputProps } from "../../interfaces/free-text.interface";
 import { buildFreeTextInputRenderModel } from "./utilities/free-text-input-render-model.utility";
 
 type TFreeTextKeyHandler = (event: KeyboardEvent<HTMLInputElement>) => boolean;

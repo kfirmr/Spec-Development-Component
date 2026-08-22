@@ -1,9 +1,9 @@
 import {
   FREE_TEXT_STATUS,
-  type TFreeTextStatusType,
   FREE_TEXT_MAX_LENGTH,
   FREE_TEXT_DEBOUNCE_MS,
   FREE_TEXT_SUGGEST_LIMIT,
+  type TFreeTextStatusType,
   FREE_TEXT_VALIDATION_ACTION,
   FREE_TEXT_LENGTH_ERROR_MESSAGE,
 } from "../../../constants/free-text.constants";

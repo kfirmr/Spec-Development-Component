@@ -1,5 +1,5 @@
-import { RouterProvider } from 'react-router-dom'
 import { router } from './router.tsx'
+import { RouterProvider } from 'react-router-dom'
 import MuiThemeProvider from './context/MuiThemeContext.tsx'
 
 function App() {

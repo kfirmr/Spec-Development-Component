@@ -1,8 +1,13 @@
 import { RouterProvider } from 'react-router-dom'
 import { router } from './router.tsx'
+import MuiThemeProvider from './context/MuiThemeContext.tsx'
 
 function App() {
-  return <RouterProvider router={router} />
+  return (
+    <MuiThemeProvider>
+      <RouterProvider router={router} />
+    </MuiThemeProvider>
+  )
 }
 
 export default App
